@@ -1,0 +1,264 @@
+*{
+	margin: 0;
+	padding: 0; 
+	font-family: Helvetica;
+} 
+body {
+    height: 100%;
+}
+
+#firstSection{
+	background-image: linear-gradient(-180deg, #D5E2FF 0%, #FFFFFF 100%);
+	width: 100%;
+	height: 105vh;
+	overflow: hidden;
+	position: relative;	
+	padding-bottom: 150px;
+}
+
+/* ================================= 
+   Cloud Animation Starts Here
+================================= */
+.cloud div {
+	position: absolute;
+	top: 0;
+	left: -150px;
+	height: auto;
+	width: 120px;
+	animation: move 25s linear infinite; 
+	z-index: 1;
+}
+.cloud div img {
+	max-width: 100%;
+	height: auto;
+}
+@keyframes move {
+	0% {left: -150px;}
+	100% {left: 100%;}
+}
+.cloud div:nth-child(1) {
+	animation-delay: 6s;
+	animation-duration: 35s;
+	top: 20px;
+}
+.cloud div:nth-child(2) {
+	animation-delay: 4s;
+	animation-duration: 20s;
+	top: 65px;
+}
+.cloud div:nth-child(3) {
+	animation-delay: 12s;
+	animation-duration: 30s;
+	top: 110px;
+}
+.cloud div:nth-child(4) {
+	animation-delay: 1s;
+	animation-duration: 45s;
+	top: 160px;
+}
+.cloud div:nth-child(5) {
+	animation-delay: 2s;
+	animation-duration: 20s;
+	top: 300px;
+} 
+/* ================================= 
+   Cloud Animation Ends Here
+================================= */
+
+.main-content{
+	position: absolute;
+	z-index: 2; 
+}
+.jumbotron { 
+    background-color: transparent !important; 
+}
+.hero-top-text{
+	font-family: Helvetica;
+	font-size: 42px; /*37*/
+	color: #121C25;
+	letter-spacing: 0;
+	text-align: center;
+	line-height: 55px;  /*42*/
+}
+.table {
+    width: 55% !important;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 20px;
+}
+.timer-t{
+	font-size: 48px;
+}
+.timer-text{
+	font-size: 22px;
+	color: #121C25;
+}
+.de-btn{
+	background: #4378F8;
+	box-shadow: 0 12px 17px -7px #4378F8;
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+	font-family: SourceSansPro-Bold;
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	text-align: center;
+	margin-top: 10px;
+	z-index: 4; 
+}
+.hero-hill-img img{
+	max-width: 95%;
+	height: auto;
+	margin-top: -100px !important;
+	overflow: hidden;
+	padding-bottom: 50px;
+/*	bottom: 0;
+	left: 0;
+	transform: translate(-0%,-35%); 
+*/	
+
+}
+.center {
+  display: block;
+  /*margin-left: auto;*/
+  margin-right: auto;
+  width: 95%; 
+}
+/*  First Section Ends Here */
+
+
+/* ================================= 
+   Second Section Starts Here
+================================= */
+#secondSection{
+	background-image: linear-gradient(-180deg, #D5E2FF 0%, #FFFFFF 100%);
+	width: 100%; 
+	padding: 100px 0;
+}
+.section-top-heading{ 
+	font-size: 40px;
+	color: #121C25;
+	letter-spacing: 0;
+	line-height: 50px;
+}
+.section-top-para{
+	font-family: Roboto-Regular;
+	font-size: 16px;
+	color: #121C25;
+	letter-spacing: 0;
+	line-height: 30px;
+}
+
+.right-img{	
+	padding-right: 0 !important;
+}
+.right-img img{
+	width: 100%;
+	height: auto;
+}
+/*  Second Section Ends Here */
+
+
+/* ================================= 
+   Third Section Starts Here
+================================= */
+#thirdSection{
+	background-image: linear-gradient(-180deg, #D5E2FF 0%, #FFFFFF 100%);
+	width: 100%; 
+	padding: 100px 0;
+}
+/*  Third Section Ends Here */
+
+
+
+/* ================================= 
+   Fourth Section Starts Here
+================================= */
+#fouthSection{
+	background: #F4F4F4;;
+	width: 100%; 
+	padding: 70px 0;
+	margin-bottom: 100px;
+}
+.caresoul-area{
+	margin-top: 50px;
+}
+.carousel-top-para{
+	font-family: SourceSansPro-Regular;
+	font-size: 16px;
+	color: #61686D;
+	letter-spacing: 0;
+	line-height: 28px;
+}
+
+/*Owl Caresoul*/
+.item{
+	position: relative;
+}
+.owl-img{
+	display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+  background-color: #FFF;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.item:hover .overlay {
+  height: 25%;
+}
+
+.text {
+  color: red; 
+  position: absolute;
+  padding: 12px 0;
+  margin-left: 30px;
+/*  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+  /*text-align: center;*/
+}
+.o-lay-header{
+	font-size: 18px;
+	margin-bottom: .6rem !important;
+	color: #121C25; 
+	letter-spacing: 0;
+}
+.o-lay-para{
+	font-size: 14px;
+	line-height: 0 !important;
+	color: #7B7B7B;
+	font-family: Roboto-Regular;
+	/*letter-spacing: 0;*/
+}
+/*===Owl Caresoul Ends===*/
+/*  Fourth Section Ends Here */
+
+/* ================================= 
+   Media Query Starts Here
+================================= */
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
