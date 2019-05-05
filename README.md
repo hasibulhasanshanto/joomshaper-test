@@ -1,2 +1,2 @@
 # joomshaperPreTest
-Before facing an interview i have to made this website.
+Before facing an interview I made this website.
